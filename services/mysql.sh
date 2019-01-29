@@ -1,4 +1,5 @@
 #!/bin/bash -e
+find /var/lib/mysql -type f -exec touch {} \;
 # Begin service ENV variables
 source "$(dirname "$0")/mysql_env.sh"
 # End service ENV variables
